@@ -1,29 +1,75 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-01-02 19:31:29 +0900
-categories: jekyll update
+title:  "第二周"
+date:   2020-03-18 19:31:29 +0900
+categories: 常微
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# 2.1
 
-Jekyll requires blog post files to be named according to the following format:
+直杆的拉伸和压缩、圣维南原理
 
-`YEAR-MONTH-DAY-title.MARKUP`
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+**圣维南原理**：在杆端作用力的方式，仅对距杆端为横向尺寸的范围内有影响. 
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+在研究细长杆受拉、压载荷作用时，可以不用研究受力的具体形式，只要端面上所受分布力的合力是一个**平行杆轴方向**，并**通过杆面形心**的力，这跟直杆就处于均匀拉伸应力状态（除了端部的一个很小范围）. 
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+**平截面假设**：原来的横截面在变形后仍保持为平面，而且彼此平行. 
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+由于在离开端部大小为d的范围之处，正应力是均匀分布的，相应的身长变形也是均匀的. 
+
+# 2.2
+
+拉伸和压缩时杆内的应力和变形
+
+
+
+## 1. 力的方向与符号
+
+（1）外力：正负号是相对于坐标系确定的，与坐标轴正向方向相同即为正。
+
+（2）内力：与**力的指向**和**作用面的外法向**（相对于自由体而言）有关，与外法线方向一致的内力为正，相反的为负。正内力对应拉伸，负内力对应压缩。
+
+
+
+## 2.杆的变形
+
+杆被拉，就伸长
+
+**本构方程**：
+$$
+ε=σ/E
+$$
+上式为由胡克定律给出的线性弹性材料的应力-应变关系，据说要把这个式子刻进DNA（x
+
+对于线性弹性材料，由应力在截面上均匀分布以及应变 σ 的定义
+$$
+σ=\frac{N}{A}=\frac{P}{A}
+$$
+
+$$
+σ=\frac{Δl}{l}
+$$
+
+本构方程可改为
+$$
+Δl=\frac{Nl}{EA}
+$$
+或
+$$
+N=\frac{EA}{l}Δl=kΔl
+$$
+式中A代表直杆的横截面面积；*k = EA/l* 称为直杆的**刚度**；*EA* 称为单位长度直杆的刚度（单位长度刚度反而不除直杆长度l），它由材料性质和横截面大小完全确定，叫做**截面刚度系数**。
+
+**非均匀变形直杆**
+
+最简单的非均匀变形直杆
+
+<img src="C:\002_workspace\006_Github\SnowBowlZ.GitHub.io\_posts\素材\常微第二周\2.2-1.jpg" style="zoom:7%;" />
+
+变截面的直杆
+
+设横截面面积是 *x* 的函数 *A(x)*；并设在这个杆上沿 *Ox* 轴方向作用由体积力载荷 *γ(x)*. 单位杆长上体积力载荷的大小则为
+$$
+q(x)=γ(x)A(x)
+$$
