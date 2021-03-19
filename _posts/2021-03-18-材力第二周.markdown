@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "常微第二周"
+title:  "材力第二周"
 date:   2020-03-18 19:31:29 +0900
-categories: 常微
+categories: 材力
 ---
 # 2.1
 
